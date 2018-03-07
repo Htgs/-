@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="grid-1200 clearfix">
+            <h1>生之园信息</h1>
+        </div>
+        <div class="header-nav">
+            <ul class="grid-1200 clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="findtrueroot.html">寻真溯源</a></li>
+                <li><a href="bigdata.html">农业大数据</a></li>
+                <li class="cur"><a href="markets.html">我家菜市</a></li>
+                <li><a href="internetofthing.html">农业物联网</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mhm-banner">
+        <div class="grid-1200"></div>
+    </div>
+    <div class="my-home-markets">
+        <div class="grid-1200 pt-35">
+            <div class="title">
+                <h1>
+                    <span>我家<i>菜市</i></span>
+                </h1>
+                <h2>
+                    <span>My home markets</span>
+                </h2>
+                <p>我家菜市是与寻真溯源平台配套的安全农产品网上商城，每一件产品都可以全程追溯，一查便知农产品从种植、生产、流通所有环节的信息</p>
+            </div>
+            <div class="mhm-content">
+                <span class="mhm-img1"></span>
+                <span class="mhm-img2"></span>
+                <span class="mhm-img3"></span>
+                <span class="mhm-img4"></span>
+                <span class="mhm-img5"></span>
+            </div>
+        </div>
+    </div>
+    <div class="info bg-f2f2f2">
+        <div class="grid-1200 pt-35">
+            <div class="title">
+                <h1>
+                    <span>我家菜市<i>介绍</i></span>
+                </h1>
+                <h2>
+                    <span>My food is introduced</span>
+                </h2>
+            </div>
+        </div>
+        <div class="info-content grid-1200">
+            <div class="info-content-left">
+                <img src="./images/mhm/mhm2.png" alt="" />
+            </div>
+            <div class="info-content-right">
+                <h2>我家菜市介绍</h2>
+                <p>我家菜市是一个结合高端线上网购和线下零售于一体的独特创新购物安全农产品商城平台。每一件产品都可以全程追溯，一查便知农产品从种植、生产、流通所有环节的信息。供应商品全是安全可靠、全程可溯源的绿色无公害、天然有机农产品，我们能够提供安全农产品的采购、批发、零售、线上线下一站式服务。结合我们利用云计算和大数据技术开发的"寻真溯源"第三方权威农产品追溯平台，可实现商城全部商品的产地认证、全程追踪、保鲜（质）期、位置信息、明暗双码、一品一码六大防伪追溯功能，杜绝假冒伪劣，实现农产品生产从播种到餐桌的无缝监控，切实确保消费者舌尖安全。</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="grid-1200 pt-35">
+            <div class="title">
+                <h1>
+                    <span>我家<i>菜市展示</i></span>
+                </h1>
+                <h2>
+                    <span>My home markets show</span>
+                </h2>
+            </div>
+        </div>
+        <div class="grid-1200 pt-35 text-center">
+            <img src="./images/mhm/mhm3.png" alt="" />
+        </div>
+    </div>
+    <div class="footer">
+        <div class="friend-link">
+            <div class="grid-1200">
+                <dl>
+                    <dt>合作公司</dt>
+                    <dd>深圳十方通信息技术股份有限公司</dd>
+                    <dd>重庆市海普软件产业有限公司</dd>
+                    <dd>广州云宏信息科技有限公司</dd>
+                    <dd>青岛浩海网络科技股份有限公司</dd>
+                    <dd>广东十记果业有限公司</dd>
+                    <dd>广州市汶鑫自控工程有限公司</dd>
+                    <dd>海康威视数字技术股份有限公司</dd>
+                </dl>
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd>电话: 020-86471420</dd>
+                    <dd>传真: 020-86471420</dd>
+                    <dd>邮箱: service@gzlgit.com</dd>
+                    <dd>邮编: 510642</dd>
+                    <dd>地址: 广州市天河区五山华南理工大学</dd>
+                    <dd>国家科技园（北区）2号楼204</dd>
+                </dl>
+                <div class="qrcode">
+                    <img src="./images/qrcode.png" alt="" />
+                    <span>官方微信扫一扫</span>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="grid-1200">
+                <p>Copyright&copy;2017广东省科技计划重大专项科研成果 版权所有粤ICP备16082048号-2</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(document).on('scroll',function (){
+            var docTop = $(this).scrollTop();
+            var mhmTop = $('.my-home-markets').offset().top;
+            if(docTop >= mhmTop){
+                $('.mhm-content').addClass('transition');
+            }
+        });
+    });
+</script>
+</html>

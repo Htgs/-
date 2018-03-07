@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>农业大数据</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bigdata.css">
+</head>
+<body>
+    <div class="header">
+        <div class="grid-1200 clearfix">
+            <h1>生之园信息</h1>
+        </div>
+        <div class="header-nav">
+            <ul class="grid-1200 clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="findtrueroot.html">寻真溯源</a></li>
+                <li class="cur"><a href="bigdata.html">农业大数据</a></li>
+                <li><a href="markets.html">我家菜市</a></li>
+                <li><a href="internetofthing.html">农业物联网</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bd-banner">
+        <div class="grid-1200"></div>
+    </div>
+    <div class="big-data">
+        <div class="grid-1200 pt-35">
+            <div class="title">
+                <h1>
+                    <span>农业大<i>数据</i></span>
+                </h1>
+                <h2>
+                    <span>Agricultural big data</span>
+                </h2>
+                <p>农业大数据由结构数据和非结构化构成，随着农业的发展建设和物联网的应用，非结构化数据呈现出快速增长的势头</p>
+            </div>
+            <div class="bd-content">
+                <p class="bd-row clearfix">
+                    <span class="icon1"></span>
+                    <span class="icon2"></span>
+                    <span class="icon3"></span>
+                    <span class="icon4"></span>
+                    <span class="icon5"></span>
+                </p>
+                <p class="bd-row clearfix mid">
+                    <span class="icon6"></span>
+                    <span class="icon7"></span>
+                    <span class="icon8"></span>
+                    <span class="icon9"></span>
+                    <span class="icon10"></span>
+                    <span class="icon11"></span>
+                </p>
+                <p class="bd-row clearfix">
+                    <span class="icon12"></span>
+                    <span class="icon13"></span>
+                    <span class="icon14"></span>
+                    <span class="icon15"></span>
+                    <span class="icon16"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="info bg-f2f2f2">
+        <div class="grid-1200 pt-35">
+            <div class="title">
+                <h1>
+                    <span>农业大<i>数据</i></span>
+                </h1>
+                <h2>
+                    <span>Agricultural big data</span>
+                </h2>
+            </div>
+        </div>
+        <div class="info-content grid-1200">
+            <div class="info-content-left">
+                <img src="./images/bd/bd2.png" alt="" />
+            </div>
+            <div class="info-content-right">
+                <h2>大数据介绍</h2>
+                <p>农业大数据实时监测与预警平台， 跨部门农业大数据采集与聚合平台，具有规模巨大、类型多样、价值密度低、处理速度快、精确度高和复杂度高等特征。通过农业物联网全程智能控制，实现农业生产环境的智能感知、智能预警、智能决策、智能分析、专家在线指导，为农业生产提供精准化种植、生产加工流通管理与决策分析</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="grid-1200 pt-35">
+            <div class="title">
+                <h1>
+                    <span>农业大<i>数据展示</i></span>
+                </h1>
+                <h2>
+                    <span>Agricultural big data show</span>
+                </h2>
+            </div>
+        </div>
+        <div class="grid-1200 pt-35 text-center">
+            <img src="./images/bd/bd3.png" alt="" />
+        </div>
+    </div>
+    <div class="footer">
+        <div class="friend-link">
+            <div class="grid-1200">
+                <dl>
+                    <dt>合作公司</dt>
+                    <dd>深圳十方通信息技术股份有限公司</dd>
+                    <dd>重庆市海普软件产业有限公司</dd>
+                    <dd>广州云宏信息科技有限公司</dd>
+                    <dd>青岛浩海网络科技股份有限公司</dd>
+                    <dd>广东十记果业有限公司</dd>
+                    <dd>广州市汶鑫自控工程有限公司</dd>
+                    <dd>海康威视数字技术股份有限公司</dd>
+                </dl>
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd>电话: 020-86471420</dd>
+                    <dd>传真: 020-86471420</dd>
+                    <dd>邮箱: service@gzlgit.com</dd>
+                    <dd>邮编: 510642</dd>
+                    <dd>地址: 广州市天河区五山华南理工大学</dd>
+                    <dd>国家科技园（北区）2号楼204</dd>
+                </dl>
+                <div class="qrcode">
+                    <img src="./images/qrcode.png" alt="" />
+                    <span>官方微信扫一扫</span>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="grid-1200">
+                <p>Copyright&copy;2017广东省科技计划重大专项科研成果 版权所有粤ICP备16082048号-2</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(document).on('scroll',function (){
+            var docTop = $(this).scrollTop();
+            var bdTop = $('.big-data').offset().top;
+            if(docTop >= bdTop){
+                $('.bd-content').addClass('transition');
+            }
+        });
+    });
+</script>
+</html>
