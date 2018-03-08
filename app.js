@@ -7,6 +7,9 @@ const config = require('./config/env.js');
 
 const app = express();
 
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
+
 // 引入路由
 const router = require('./router');
 

@@ -1,0 +1,12 @@
+<div class="header">
+	<div class="grid-1200 clearfix">
+		<h1>生之园信息</h1>
+	</div>
+	<div class="header-nav">
+		<ul class="grid-1200 clearfix">
+			<% for(var i = 0; i < navLists.length; i++){ %>
+				<li class="<%= navLists[i].url === nav ? 'cur' : '' %>"><a href="<%= navLists[i].url %>"><%=navLists[i].name%></a></li>
+			<% } %>
+		</ul>
+	</div>
+</div>
