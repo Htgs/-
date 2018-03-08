@@ -287,7 +287,9 @@ i, s {
 	width: 100%;
 	background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
-	background-position: left center;	
+	background-position: left center;
+	-webkit-background-size: 650px 96px;
+	background-size: 650px 96px;
 }
 .header-nav {
 	background-color: #1C8678;
@@ -355,7 +357,6 @@ i, s {
 	height: 82px;
 	line-height: 82px;
 	text-align: center;
-	background: url(../images/footer_logo.png) no-repeat left center;
 }
 /*
 
@@ -916,6 +917,8 @@ i, s {
 	background: url(../images/bd16.png) no-repeat center center;
 }
 
+/*.tc-tea{}
+.tc-content{}*/
 
 .my-home-markets{}
 .mhm-content{
