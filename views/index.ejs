@@ -240,25 +240,29 @@
 	<div class="blank bg-white"></div>
 	<script type="text/javascript">
 		$(function(){
-			$(document).on('scroll',function (){
-				var docTop = $(this).scrollTop();
-				var ftrTop = $('.find-true-roots').offset().top;
-				var bdTop = $('.big-data').offset().top;
-				var mhmTop = $('.my-home-markets').offset().top;
-				var iotTop = $('.internet-of-things').offset().top;
-				if(docTop >= ftrTop){
-					$('.ftr-content').addClass('transition');
-				}
-				if(docTop >= bdTop){
-					$('.bd-content').addClass('transition');
-				}
-				if(docTop >= mhmTop){
-					$('.mhm-content').addClass('transition');
-				}
-				if(docTop >= iotTop){
-					$('.iot-content').addClass('transition');
-				}
-			});
+			$('.ftr-content').addClass('transition');
+			$('.bd-content').addClass('transition');
+			$('.mhm-content').addClass('transition');
+			$('.iot-content').addClass('transition');
+			// $(document).on('scroll',function (){
+			// 	var docTop = $(this).scrollTop();
+			// 	var ftrTop = $('.find-true-roots').offset().top;
+			// 	var bdTop = $('.big-data').offset().top;
+			// 	var mhmTop = $('.my-home-markets').offset().top;
+			// 	var iotTop = $('.internet-of-things').offset().top;
+			// 	if(docTop >= ftrTop){
+			// 		$('.ftr-content').addClass('transition');
+			// 	}
+			// 	if(docTop >= bdTop){
+			// 		$('.bd-content').addClass('transition');
+			// 	}
+			// 	if(docTop >= mhmTop){
+			// 		$('.mhm-content').addClass('transition');
+			// 	}
+			// 	if(docTop >= iotTop){
+			// 		$('.iot-content').addClass('transition');
+			// 	}
+			// });
 		});
 	</script>
 <%- include('footer') -%>

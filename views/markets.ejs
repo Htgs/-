@@ -60,13 +60,14 @@
 </div>
 <script type="text/javascript">
     $(function(){
-        $(document).on('scroll',function (){
-            var docTop = $(this).scrollTop();
-            var mhmTop = $('.my-home-markets').offset().top;
-            if(docTop >= mhmTop){
-                $('.mhm-content').addClass('transition');
-            }
-        });
+        $('.mhm-content').addClass('transition');
+        // $(document).on('scroll',function (){
+        //     var docTop = $(this).scrollTop();
+        //     var mhmTop = $('.my-home-markets').offset().top;
+        //     if(docTop >= mhmTop){
+        //         $('.mhm-content').addClass('transition');
+        //     }
+        // });
     });
 </script>
 <%- include('footer') -%>
