@@ -95,14 +95,13 @@
 <div class="blank bg-white"></div>
 <script type="text/javascript">
     $(function(){
-        $('.iot-content').addClass('transition');
-        // $(document).on('scroll',function (){
-        //     var docTop = $(this).scrollTop();
-        //     var iotTop = $('.internet-of-things').offset().top;
-        //     if(docTop >= iotTop){
-        //         $('.iot-content').addClass('transition');
-        //     }
-        // });
+        $(document).on('scroll',function (){
+            var docTop = $(this).scrollTop();
+            var iotTop = $('.internet-of-things').offset().top;
+            if(docTop >= iotTop){
+                $('.iot-content').addClass('transition');
+            }
+        });
     });
 </script>
 <%- include('footer') -%>

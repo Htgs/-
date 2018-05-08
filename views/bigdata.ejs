@@ -79,14 +79,13 @@
 </div>
 <script type="text/javascript">
     $(function(){
-        $('.bd-content').addClass('transition');
-        // $(document).on('scroll',function (){
-        //     var docTop = $(this).scrollTop();
-        //     var bdTop = $('.big-data').offset().top;
-        //     if(docTop >= bdTop){
-        //         $('.bd-content').addClass('transition');
-        //     }
-        // });
+        $(document).on('scroll',function (){
+            var docTop = $(this).scrollTop();
+            var bdTop = $('.big-data').offset().top;
+            if(docTop >= bdTop){
+                $('.bd-content').addClass('transition');
+            }
+        });
     });
 </script>
 <%- include('footer') -%>

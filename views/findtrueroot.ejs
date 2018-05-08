@@ -158,14 +158,13 @@
 <div class="blank bg-white"></div>
 <script type="text/javascript">
     $(function(){
-        $('.ftr-content').addClass('transition');
-        // $(document).on('scroll',function (){
-        //     var docTop = $(this).scrollTop();
-        //     var ftrTop = $('.find-true-roots').offset().top;
-        //     if(docTop >= ftrTop){
-        //         $('.ftr-content').addClass('transition');
-        //     }
-        // });
+        $(document).on('scroll',function (){
+            var docTop = $(this).scrollTop();
+            var ftrTop = $('.find-true-roots').offset().top;
+            if(docTop >= ftrTop){
+                $('.ftr-content').addClass('transition');
+            }
+        });
     });
 </script>
 <%- include('footer') -%>
